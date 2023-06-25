@@ -1,0 +1,129 @@
+<form #createForm="ngForm" (ngSubmit)="onSubmit(createForm)" >
+    <div class="p-5">
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>ID</h2></label>
+                <input type="text" name="ID" class="form-control" placeholder="Enter the ID" required ngModel >
+            </div>
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Company Name</h2></label>
+                <input type="text" name="Manufacturer's Company Name" class="form-control" placeholder="Enter the Company Name" required ngModel >
+            </div>
+
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Address</h2></label>
+                <input type="text" name="Manufactrer's Company Address" class="form-control" placeholder="Enter the Address" required ngModel >
+            </div>
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Farmer Details</h2></label>
+                <input type="text" name="Manufacturer's Farmer Details" class="form-control" placeholder="Enter the Farmer Details" required ngModel >
+            </div>
+
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Condition of animal at the time of recieving</h2></label>
+                <select name="Manufacturer's Condition of Animal at the time of recieving at" class="form-control" placeholder="Enter the ID" required ngModel >
+                    <option value="Healthy Animal">Healthy Animal</option>
+                    <option value="Unhealthy Animal">Unhealthy Animal</option>
+                    </select>
+            </div>
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Date and Time of recieveing the animal</h2></label>
+                <input type="datetime-local" name="Manufacturer's Date and Time of recieving the animal" class="form-control" placeholder="Enter the Date and time" required ngModel >
+            </div>
+
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Date and time of Quality testing of meat including Quality Test type</h2></label>
+                <input type="datetime-local" name="Manufacturer's Date and time of Quality testing of meat including Quality Test type" class="form-control" placeholder="Enter the Date and time " required ngModel >
+            </div>
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Date of processing the meat</h2></label>
+                <input type="datetime-local" name="Manufacturer's Date of processing the meat" class="form-control" placeholder="Enter the Date and time" required ngModel >
+            </div>
+
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Batch Number of meat</h2></label>
+                <input type="text" name="Manufacturer's Batch Number of meat" class="form-control" placeholder="Enter the Batch Number" required ngModel >
+            </div>
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Date and time of Packaging of meat</h2></label>
+                <input type="datetime-local" name="Manufacturer's Date and time of Packaging of meat" class="form-control" placeholder="Enter the Date and time" required ngModel >
+            </div>
+
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Date of expiry of meat</h2></label>
+                <input type="date" name="Date of expiry of meat" class="form-control" placeholder="Enter the ID" ngModel >
+            </div>
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Date and time of dispatch of meat</h2></label>
+                <input type="datetime-local" name="Manufacturer's Date and time of dispatch of meat" class="form-control" placeholder="Enter the Date and time" required ngModel >
+            </div>
+
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Temperature of meat at time of dispatch</h2></label>
+                <input type="text" name="Manufacturer's Temperature of meat at time of dispatch" class="form-control" placeholder="Enter the Temperature in celsius" required ngModel >
+            </div>
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Vehicle Details</h2></label>
+                <input type="text" name="Manufacturer's Vehicle Details" class="form-control" placeholder="Enter the vehicle details" required ngModel >
+            </div>
+
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>ISO Certificate</h2></label>
+                <select name="Manufacturer's ISO Certificate" class="form-control" placeholder="Enter the Certificate" required ngModel >
+                    <option value="Approved">Approved</option>
+                    <option value="Not Approved">Not Approved</option>
+                    </select>
+            </div>
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>FSSO Certificate</h2></label>
+                <select name="Manufacturer's FSSo Certificate" class="form-control" placeholder="Enter the Certificate" required ngModel >
+                    <option value="Approved">Approved</option>
+                    <option value="Not Approved">Not Approved</option>
+                    </select>
+            </div>
+
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Rating for the meat</h2></label>
+                <select name="Manufacturer's Rating for the meat" class="form-control" placeholder="Enter the ID" required ngModel >
+                    <option value="Excellent">Excellent</option>
+                    <option value="Veru Good">Very Good</option>
+                    <option value="Average">Average</option>
+                    <option value="Bad">Bad</option>
+                    </select>
+            </div>
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Date and time of audit</h2></label>
+                <input type="datetime-local" name="Manufacturer's Date and time of audit" class="form-control" placeholder="Enter the Date and time" required ngModel >
+            </div>
+
+        </div>
+        
+
+        <div class="row mt-5">
+            <div class="col-3">
+                <button class="btn btn-block btn-theme" [disabled]="createForm.invalid" >
+                    Submit
+                </button>
+               
+            </div>
+            
+        </div>
+    </div>
+  
+</form>

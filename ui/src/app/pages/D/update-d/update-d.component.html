@@ -1,0 +1,121 @@
+<form #updateForm="ngForm" (ngSubmit)="onSubmit(updateForm)" >
+    <div class="p-5">
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Company Name</h2></label>
+                <input type="text" name="Distributor's  Company Name" class="form-control" placeholder="Enter the Company Name" required ngModel >
+            </div>
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Address</h2></label>
+                <input type="text" name=" Distributor's  Address" class="form-control" placeholder="Enter the Address" required ngModel >
+            </div>
+
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Supplier for meat</h2></label>
+                <input type="text" name="Distributor's Supplier of Meat" class="form-control" placeholder="Enter the Supplier of Meat" required ngModel >
+            </div>
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Date and time of recieval of Meat</h2></label>
+                <input type="datetime-local" name="Distributor's Date and time of recieval of Meat" class="form-control" placeholder="Enter the Date and time" required ngModel >
+            </div>
+
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Quality of meat at recieval </h2></label>
+                <select name="Distributor's  Quality of Meat at recieval" class="form-control" placeholder="Enter the ID" required ngModel >
+                    <option value="Excellent">Excellent</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Good"> Good</option>
+                    <option value="Bad">Bad</option>
+                    </select>
+            </div>
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2> Brought Vehicle Details</h2></label>
+                <input type="text" name="Distributor's  Brought Vehicle Details" class="form-control" placeholder="Enter the Vehicle Details" required ngModel >
+            </div>
+
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Temperature Of Meat at recieval</h2></label>
+                <input type="text" name="Distributor's  Temperature of Meat at recieval" class="form-control" placeholder="Enter the Temperature in celsius" required ngModel >
+            </div>
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Refrigirator System</h2></label>
+                <input type="text" name="Distributor's  Refrigirator System" class="form-control" placeholder="Enter the System Name" required ngModel >
+            </div>
+
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Date and time of dispatch of meat</h2></label>
+                <input type="datetime-local" name="Distributor's  Date and dispatch of meat" class="form-control" placeholder="Enter the Date and time" required ngModel  >
+            </div>
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Temperature Of Meat at time of dispatch</h2></label>
+                <input type="text" name="Distributor's  Temperature of Meat at dispatch" class="form-control" placeholder="Enter the Temperature in celsius" required ngModel >
+            </div>
+
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Date of expiry</h2></label>
+                <input type="datetime-local" name="Distributor's  Date of Expiry" class="form-control" placeholder="Enter the date and time" required ngModel >
+            </div>
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Vehicle Details for dispatch</h2></label>
+                <input type="text" name="Distributor's  Vehicle Details for dispatch " class="form-control" placeholder="Enter the vehicle details" required ngModel >
+            </div>
+
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>ISO Certificate</h2></label>
+                <select name="Distributor's  ISO Certificate" class="form-control" placeholder="Enter the Certificate" required ngModel >
+                    <option value="Approved">Approved</option>
+                    <option value="Not Approved">Not Approved</option>
+                    </select>
+            </div>
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>FSSO Certificate</h2></label>
+                <select name="Distributor's FSSo Certificate" class="form-control" placeholder="Enter the Certificate" required ngModel >
+                    <option value="Approved">Approved</option>
+                    <option value="Not Approved">Not Approved</option>
+                    </select>
+            </div>
+
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Rating for the meat</h2></label>
+                <select name="Distributor's  Rating for the meat" class="form-control" placeholder="Enter the ID" required ngModel >
+                    <option value="Excellent">Excellent</option>
+                    <option value="Veru Good">Very Good</option>
+                    <option value="Average">Average</option>
+                    <option value="Bad">Bad</option>
+                    </select>
+            </div>
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Date and time of audit</h2></label>
+                <input type="datetime-local" name="Distributor's  Date and time of audit" class="form-control" placeholder="Enter the Date and time" required ngModel >
+            </div>
+
+        </div>
+        
+
+        <div class="row mt-5">
+            <div class="col-3">
+                <button class="btn btn-block btn-theme" [disabled]="updateForm.invalid" >
+                    Submit
+                </button>
+               
+            </div>
+            
+        </div>
+    </div>
+  
+</form>

@@ -1,0 +1,76 @@
+<form #updateForm="ngForm" (ngSubmit)="onSubmit(updateForm)" >
+    <div class="p-5">
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Company Name</h2></label>
+                <input type="text" name="Seller's Company Name" class="form-control" placeholder="Enter the Company Name" required ngModel >
+            </div>
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Address</h2></label>
+                <input type="text" name="Seller's Address" class="form-control" placeholder="Enter the Address" required ngModel >
+            </div>
+
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Temperature Of Meat at recieval</h2></label>
+                <input type="text" name="Seller's Temperature Of Meat at recieval" class="form-control" placeholder="Enter the Temperature in celsius" required ngModel >
+            </div>
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Date and time of recieval of Meat</h2></label>
+                <input type="datetime-local" name="Seller's Date and time of recieval of Meat" class="form-control" placeholder="Enter the Date and time" required ngModel >
+            </div>
+
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Rating for the meat</h2></label>
+                <select name="Seller's Rating for the meat" class="form-control" placeholder="Enter the ID" required ngModel >
+                    <option value="Excellent">Excellent</option>
+                    <option value="Veru Good">Very Good</option>
+                    <option value="Average">Average</option>
+                    <option value="Bad">Bad</option>
+                    </select>
+            </div>
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2> Brought Vehicle Details</h2></label>
+                <input type="text" name="Seller's Brought Vehicle Details " class="form-control" placeholder="Enter the Vehicle Details" required ngModel >
+            </div>
+
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Supplier of Meat</h2></label>
+                <input type="text" name="Seller's Supplier of meat" class="form-control" placeholder="Enter the Supplier" required ngModel >
+            </div>
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Refrigirator System</h2></label>
+                <input type="text" name="Seller's Refrigirator System" class="form-control" placeholder="Enter the System Name" required ngModel >
+            </div>
+
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Date and time of sale of meat</h2></label>
+                <input type="datetime-local" name="Seller's Date and time of sell of meat" class="form-control" placeholder="Enter the Date and time" required ngModel  >
+            </div>
+            <div class="col-lg-6">
+                <label for="ID"class="ms-3"><h2>Temperature Of Meat at time of selling</h2></label>
+                <input type="text" name="Seller's Temperature of Meat at selling" class="form-control" placeholder="Enter the Temperature in celsius" required ngModel >
+            </div>
+
+        </div>
+        
+        <div class="row mt-5">
+            <div class="col-3">
+                <button class="btn btn-block btn-theme" [disabled]="updateForm.invalid" >
+                    Submit
+                </button>
+               
+            </div>
+            
+        </div>
+    </div>
+  
+</form>

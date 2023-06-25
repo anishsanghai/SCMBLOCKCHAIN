@@ -1,0 +1,18 @@
+.card{
+    height: 300px;
+    width:300px;
+}
+.container1:hover{
+    background-color: #13BDE3;
+    color: white;
+    cursor: pointer;
+}
+.container2:hover{
+    background-color: #13BDE3;
+    color: white;
+    cursor: pointer;
+}
+.btn-theme{
+    background-color: #13BDE3;
+    color: white;
+}

@@ -1,0 +1,15 @@
+<form #viewForm="ngForm" (ngSubmit)="onSubmit(viewForm)" >
+    <div class="d-flex justify-content-center">
+        <div class="col-3 mt-5">
+            <div class="row">
+                <input type="text" name="prod" placeholder="Enter The Product ID" class="form-control shadow " ngModel >
+            </div>
+            <div class="row">
+                <button class="btn btn-block btn-info mt-3 btn-theme">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </div>
+</form>
+

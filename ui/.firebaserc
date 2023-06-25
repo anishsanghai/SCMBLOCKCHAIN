@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "productblock-4050a": {
+      "hosting": {
+        "ui": [
+          "productblock-4050a"
+        ]
+      }
+    },
+    "finalcloud-2ae61": {
+      "hosting": {
+        "ui": [
+          "finalcloud-2ae61"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "finalcloud-2ae61"
+  }
+}
